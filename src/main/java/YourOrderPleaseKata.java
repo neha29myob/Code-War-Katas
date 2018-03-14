@@ -34,13 +34,20 @@ public class YourOrderPleaseKata {
             }
         }
         return orderedResult.toString().trim();
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     }
+
     public static String orderBest(String words) {
 
         return(Arrays.stream(words.split(" "))
                 .sorted(Comparator.comparing(s -> Integer.valueOf(s.replaceAll("\\D", ""))))
                 .reduce((a, b) -> a + " " + b).get());
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     }
 }

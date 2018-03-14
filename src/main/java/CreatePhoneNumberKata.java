@@ -8,9 +8,15 @@ public class CreatePhoneNumberKata {
         String numberString = Arrays.toString(numbers)
                 .replace("[","")
                 .replace(", ","")
+<<<<<<< HEAD
                 .replace("]", "").trim();
 
         return ("("+ numbers[0] + ") "
+=======
+                .replace("]", "");
+
+        return ("("+ numberString.substring(0,3) + ") "
+>>>>>>> master
                 + numberString.substring(3,6) + "-"
                 + numberString.substring(6,10));
     }
