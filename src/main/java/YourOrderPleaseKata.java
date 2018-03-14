@@ -16,7 +16,6 @@ public class YourOrderPleaseKata {
                 }
             }
         }
-        // System.out.println(String.join(" ", strgs1));
         order(s);
     }
 
@@ -35,15 +34,13 @@ public class YourOrderPleaseKata {
             }
         }
         return orderedResult.toString().trim();
-        //return(String.join(" ", result));
     }
+
     public static String orderBest(String words) {
         words = "is2 Thi1s T4est 3a";
         System.out.println(Arrays.stream(words.split(" "))
                 .sorted(Comparator.comparing(s -> Integer.valueOf(s.replaceAll("\\D", ""))))
                 .reduce((a, b) -> a + " " + b).get());
-       // System.out.println(Arrays.stream(words.split(" ")));
-
         return "";
     }
 }

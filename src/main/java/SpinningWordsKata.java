@@ -1,12 +1,10 @@
-import java.util.Arrays;
-
 public class SpinningWordsKata {
 
     public static void main(String[] args){
         String testInput = "Hey fellow warriors";
 
         spinWordsAlternate(testInput);
-        //spinWords(testInput);
+        spinWords(testInput);
     }
 
     public static String spinWords(String sentence){
@@ -18,10 +16,6 @@ public class SpinningWordsKata {
         }
 
         return result.toString().trim();
-    }
-
-    private static String spin(String word){
-        return new StringBuffer(word).reverse().toString();
     }
 
     public static String spinWordsAlternate(String sentence){
@@ -37,7 +31,9 @@ public class SpinningWordsKata {
         return String.join(" ", words) ;
     }
 
-
+    private static String spin(String word){
+        return new StringBuffer(word).reverse().toString();
+    }
 
 
 }
