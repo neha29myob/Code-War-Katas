@@ -34,6 +34,7 @@ public class YourOrderPleaseKata {
             }
         }
         return orderedResult.toString().trim();
+
     }
 
     public static String orderBest(String words) {
